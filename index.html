@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPHL Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to JPHL</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#documentation">Documentation</a>
+            <a href="#examples">Examples</a>
+            <a href="#download">Download</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>About JPHL</h2>
+            <p>JPHL (Java Paging Hyper Language) is designed to facilitate website creation using most of the HTML syntax, along with custom tags for extended functionalities. This language allows for building modern websites that run on JavaScript servers.</p>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="documentation">
+            <h2>Documentation</h2>
+            <p>JPHL uses 80% of the standard HTML syntax while adding custom tags for additional functionalities. Here's a basic structure of a JPHL file:</p>
+            <pre><code>
+                <html>
+                    <head>
+                        <title>Sample JPHL Page</title>
+                    </head>
+                    <body>
+                        <header>
+                            <h1>Welcome to JPHL!</h1>
+                        </header>
+                        <main>
+                            <p>This is a simple JPHL page.</p>
+                        </main>
+                        <footer>
+                            <p>Created using JPHL</p>
+                        </footer>
+                    </body>
+                </html>
+            </code></pre>
+            <p>JPHL also includes advanced tags for server management:</p>
+            <pre><code>
+                <port value="8080"></port>
+                <define-server>
+                    <port value="3000"></port>
+                    <route path="/about">
+                        <html>
+                            <head>
+                                <title>About Page</title>
+                            </head>
+                            <body>
+                                <header>
+                                    <h1>About Us</h1>
+                                </header>
+                                <main>
+                                    <p>Welcome to the about page of our JPHL project.</p>
+                                </main>
+                            </body>
+                        </html>
+                    </route>
+                </define-server>
+            </code></pre>
+            <p>To run a JPHL file, use the following command:</p>
+            <pre><code>node JP_server.js your-file.jphl</code></pre>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples">
+            <h2>Examples</h2>
+            <h3>Simple JPHL Page</h3>
+            <pre><code>
+                <html>
+                    <head>
+                        <title>Simple JPHL Page</title>
+                    </head>
+                    <body>
+                        <header>
+                            <h1>Hello, JPHL!</h1>
+                        </header>
+                        <main>
+                            <p>Welcome to our JPHL example page.</p>
+                        </main>
+                        <footer>
+                            <p>Example 1 &copy; 2024</p>
+                        </footer>
+                    </body>
+                </html>
+            </code></pre>
+            <h3>JPHL Page with Custom Port Tag</h3>
+            <pre><code>
+                <html>
+                    <port value="3000"></port>
+                    <head>
+                        <title>Server Port Example</title>
+                    </head>
+                    <body>
+                        <header>
+                            <h1>Server Running on Port 3000</h1>
+                        </header>
+                        <main>
+                            <p>Set up your server with this custom port tag.</p>
+                        </main>
+                    </body>
+                </html>
+            </code></pre>
+            <h3>Advanced Routing Example</h3>
+            <pre><code>
+                <define-server>
+                    <port value="8080"></port>
+                    <route path="/about">
+                        <html>
+                            <head>
+                                <title>About Us</title>
+                            </head>
+                            <body>
+                                <header>
+                                    <h1>About Our Project</h1>
+                                </header>
+                                <main>
+                                    <p>Learn more about JPHL here.</p>
+                                </main>
+                            </body>
+                        </html>
+                    </route>
+                </define-server>
+            </code></pre>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download">
+            <h2>Download JPHL Server</h2>
+            <p>To get started with JPHL, download the server executable below:</p>
+            <ul>
+                <li><a href="JP_server.exe" download>Download JPHL Server (Windows)</a></li>
+            </ul>
+
+            <h3>Installation Instructions</h3>
+            <p>Follow these steps to install and run the JPHL server:</p>
+            <ol>
+                <li>Download the JPHL server executable.</li>
+                <li>Place the `.exe` file in your project directory.</li>
+                <li>Open your terminal or command prompt.</li>
+                <li>Run the server with the command:</li>
+            </ol>
+            <pre><code>node JP_server.js your-file.jphl</code></pre>
+            <p>Ensure Node.js is installed and added to your system's PATH.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 JPHL. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
